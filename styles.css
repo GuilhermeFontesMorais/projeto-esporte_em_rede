@@ -1,11 +1,40 @@
-header{
-    background-color: #000F2D;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
+:root {
+    --azulescuro: #001333;
+    --azulescuro2: #002255;
+    --amarelo: #d4ff00;
+    --azul: #007bff;
+    --vermelho: #dc3545;
 }
 
-.logo{
-    width: 80px;
-    height: 100px;
+body{
+    background-color: var(--azulescuro);
+    color: white;
+}
+
+header{
+    background-color: var(--azulescuro2);
+}
+
+#cc{
+    margin: 10px;
+}
+
+#destaque{
+    color: var(--amarelo);
+}
+
+.btn{
+    background-color: var(--azulescuro2);
+    color: white;
+}
+
+
+img{
+    width: 40vw;
+    height: 50vh;
+}
+
+#futebol{
+    background-color: var(--amarelo);
+    color: black;
 }

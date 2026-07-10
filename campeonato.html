@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Campeonato Comunitário — Esporte em Rede</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
 </head>
 
 <body>
@@ -24,28 +28,34 @@
         <button><a href="#">Acompanhar campeonato</a></button>
     </header>
 
-    <section>
-        <div>
-            <h1>Campeonato Comunitário</h1>
-            <p>O jogo começa na comunidade.</p>
-            <p>A união faz o esporte mais forte!</p>
-        </div>
-        <div>
-            <img src="" alt="Atletas comemorando">
-        </div>
-    </section>
+    <main class="container">
+        <section id="cc" class="row">
+            <div class="col-lg-7">
+                <h1 class="fw-bold display-4">Campeonato Comunitário</h1>
+                <p>O jogo começa na comunidade.</p>
+                <p id="destaque">A união faz o esporte mais forte!</p>
 
-    <nav>
-        <ul>
-            <li><a href="#">Futebol</a></li>
-            <li><a href="#">Basquete</a></li>
-            <li><a href="#">Vôlei</a></li>
-            <li><a href="#">Futsal</a></li>
-            <li><a href="#">Atletismo</a></li>
-        </ul>
-    </nav>
+                <nav class="d-flex overflow-auto gap-2">
+                    <a href="#" class="btn" id="futebol">
+                        <span class="material-symbols-outlined" style="font-size: 18px;">
+                            sports_and_outdoors
+                        </span>
+                        Futebol</a>
+                        <a href="#" class="btn">
+                            <span class="material-symbols-outlined" style="font-size: 18px;">
+                                sports_basketball
+                            </span>
+                            Basquete</a>
+                        <a href="#" class="btn">Vôlei</a>
+                        <a href="#" class="btn">Futsal</a>
+                        <a href="#" class="btn">Atletismo</a>
+                </nav>
+            </div>
+            <div class="col-lg-5">
+                <img src="imagens/atletas.jpg" alt="Atletas comemorando">
+            </div>
+        </section>
 
-    <main>
         <section>
             <h2>Classificação</h2>
             <table>
@@ -318,7 +328,7 @@
             <p>O jogo começa na comunidade</p>
         </div>
 
-        <nav class="footer-nav">
+        <nav>
             <h5>Navegação</h5>
             <ul>
                 <li><a href="#">Início</a></li>
@@ -330,9 +340,9 @@
             </ul>
         </nav>
 
-        <div class="footer-social">
+        <div>
             <h5>Siga-nos</h5>
-            <ul class="social-icons">
+            <ul>
                 <li><a href="#">Facebook</a></li>
                 <li><a href="#">Instagram</a></li>
                 <li><a href="#">YouTube</a></li>
@@ -340,11 +350,11 @@
             </ul>
         </div>
 
-        <div class="footer-contact">
+        <div>
             <h5>Contato</h5>
             <p>contato@esporteemrede.com.br</p>
             <p>Comunidade onde o esporte acontece</p>
-            <p class="footer-tagline">
+            <p>
                 Esporte é união. Comunidade é força.<br>
                 Juntos somos <strong>mais fortes!</strong>
             </p>
