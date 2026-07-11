@@ -13,19 +13,33 @@
 
 <body>
 
-    <header>
-        <div>Esporte <span>em Rede</span></div>
-        <nav>
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Campeonatos</a></li>
-                <li><a href="#">Resultados</a></li>
-                <li><a href="#">Classificação</a></li>
-                <li><a href="#">Notícias</a></li>
-                <li><a href="#">Sobre</a></li>
-            </ul>
-        </nav>
-        <button><a href="#">Acompanhar campeonato</a></button>
+    <header class="cabecalho text-white py-4">
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end gap-3">
+
+                <div class="d-flex align-items-center gap-2">
+                    <img src="#" alt="Logo Esporte em Rede" width="50">
+
+                    <h1 class="h1 fw-bold mb-0">
+                        Esporte em Rede
+                    </h1>
+                </div>
+
+                <nav class="d-flex flex-wrap gap-3">
+                    <a class="text-white fw-semibold" href="index.html">Início</a>
+                    <a class="text-white fw-semibold" href="campeonatos.html">Campeonatos</a>
+                    <a class="text-white fw-semibold" href="resultados.html">Resultados</a>
+                    <a class="text-white fw-semibold" href="#">Classificação</a>
+                    <a class="text-white fw-semibold" href="#">Notícias</a>
+                    <a class="text-white fw-semibold" href="#">Sobre</a>
+                </nav>
+
+                <a class="btn btn-danger fw-semibold" href="campeonatos.html">
+                    Acompanhar campeonato
+                </a>
+
+            </div>
+        </div>
     </header>
 
     <main class="container">
@@ -41,14 +55,14 @@
                             sports_and_outdoors
                         </span>
                         Futebol</a>
-                        <a href="#" class="btn">
-                            <span class="material-symbols-outlined" style="font-size: 18px;">
-                                sports_basketball
-                            </span>
-                            Basquete</a>
-                        <a href="#" class="btn">Vôlei</a>
-                        <a href="#" class="btn">Futsal</a>
-                        <a href="#" class="btn">Atletismo</a>
+                    <a href="#" class="btn">
+                        <span class="material-symbols-outlined" style="font-size: 18px;">
+                            sports_basketball
+                        </span>
+                        Basquete</a>
+                    <a href="#" class="btn">Vôlei</a>
+                    <a href="#" class="btn">Futsal</a>
+                    <a href="#" class="btn">Atletismo</a>
                 </nav>
             </div>
             <div class="col-lg-5">
@@ -322,42 +336,57 @@
 
     </main>
 
-    <footer>
-        <div>
-            <div>Esporte <span>em Rede</span></div>
-            <p>O jogo começa na comunidade</p>
-        </div>
+    <footer class="rodape text-white py-5">
+        <div class="container">
+            <div class="row g-4">
 
-        <nav>
-            <h5>Navegação</h5>
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Campeonatos</a></li>
-                <li><a href="#">Resultados</a></li>
-                <li><a href="#">Classificação</a></li>
-                <li><a href="#">Notícias</a></li>
-                <li><a href="#">Sobre</a></li>
-            </ul>
-        </nav>
+                <!-- Marca -->
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <img src="#" alt="Logo Esporte em Rede" width="50">
 
-        <div>
-            <h5>Siga-nos</h5>
-            <ul>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">YouTube</a></li>
-                <li><a href="#">WhatsApp</a></li>
-            </ul>
-        </div>
+                        <h2 class="h4 fw-bold mb-0">
+                            Esporte em Rede
+                        </h2>
+                    </div>
 
-        <div>
-            <h5>Contato</h5>
-            <p>contato@esporteemrede.com.br</p>
-            <p>Comunidade onde o esporte acontece</p>
-            <p>
-                Esporte é união. Comunidade é força.<br>
-                Juntos somos <strong>mais fortes!</strong>
-            </p>
+                    <p class="mb-0">
+                        O jogo começa na comunidade
+                    </p>
+                </div>
+
+                <!-- Navegação -->
+                <div class="col-12 col-md-6 col-xl-4">
+                    <h3 class="h5 fw-bold mb-3">
+                        Navegação
+                    </h3>
+
+                    <nav class="d-flex flex-wrap gap-3">
+                        <a class="text-white" href="index.html">Início</a>
+                        <a class="text-white" href="campeonatos.html">Campeonatos</a>
+                        <a class="text-white" href="inscricoes.html">Inscrições</a>
+                        <a class="text-white" href="#">Classificação</a>
+                        <a class="text-white" href="#">Notícias</a>
+                        <a class="text-white" href="#">Sobre</a>
+                    </nav>
+                </div>
+
+                <!-- Contato -->
+                <div class="col-12 col-xl-4">
+                    <h3 class="h5 fw-bold mb-3">
+                        Contato
+                    </h3>
+
+                    <p class="mb-2">
+                        contato@esporteemrede.com.br
+                    </p>
+
+                    <p class="mb-0">
+                        Comunidade onde o esporte acontece
+                    </p>
+                </div>
+
+            </div>
         </div>
     </footer>
 
