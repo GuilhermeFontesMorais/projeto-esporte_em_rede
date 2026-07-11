@@ -1,9 +1,5 @@
-:root {
-    --azulescuro: #001333;
-    --azulescuro2: #002255;
-    --amarelo: #d4ff00;
-    --azul: #007bff;
-    --vermelho: #dc3545;
+.cabecalho {
+    background-color: #06183d;
 }
 
 #cc{
@@ -28,4 +24,7 @@ img{
 #futebol{
     background-color: var(--amarelo);
     color: black;
+}
+.rodape a:hover {
+    color: #ffc107;
 }
