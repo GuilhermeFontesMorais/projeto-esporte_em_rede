@@ -4,137 +4,335 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Esporte em Rede</title>
-    <link rel="stylesheet" href="styles.css">
+
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+
+    <!-- Seu CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 
-<body> <!--PAGINA INICIAL-->
-    <header class="bg-primary text-white py-4"> <!--O HEADER É IGUAL NAS 3 PAGINAS-->
+<body>
+
+    <!-- HEADER: topo do site -->
+    <header class="cabecalho text-white py-4">
         <div class="container">
-            <div class="d-flex flex-column flex-md-row justify-content-between aling-items-md-end gap-3">
-                <img src="#" alt="logo Esporte em Rede" width="50">
-                <h1 class="h1 fw-bold mb-0">
-                    Esporte em Rede
-                </h1>
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end gap-3">
+
+                <div class="d-flex align-items-center gap-2">
+                    <img src="#" alt="Logo Esporte em Rede" width="50">
+
+                    <h1 class="h1 fw-bold mb-0">
+                        Esporte em Rede
+                    </h1>
+                </div>
+
                 <nav class="d-flex flex-wrap gap-3">
-                    <a class="text-white fw-semibold" href="#inicio">Início</a>
-                    <a class="text-white fw-semibold" href="#campeonatos">Campeonatos</a>
-                    <a class="text-white fw-semibold" href="#resultados">Resultados</a>
-                    <a class="text-white fw-semibold" href="#classificação">Classificação</a>
-                    <a class="text-white fw-semibold" href="#noticias">Noticias</a>
-                    <a class="text-white fw-semibold" href="#sobre">Sobre</a>
+                    <a class="text-white fw-semibold" href="index.html">Início</a>
+                    <a class="text-white fw-semibold" href="campeonatos.html">Campeonatos</a>
+                    <a class="text-white fw-semibold" href="resultados.html">Resultados</a>
+                    <a class="text-white fw-semibold" href="#">Classificação</a>
+                    <a class="text-white fw-semibold" href="#">Notícias</a>
+                    <a class="text-white fw-semibold" href="#">Sobre</a>
                 </nav>
-                <a class="btn btn-danger fw-semibold">Acompanhar campeonato</a>
+
+                <a class="btn btn-danger fw-semibold" href="campeonatos.html">
+                    Acompanhar campeonato
+                </a>
+
             </div>
         </div>
+    </header>
 
+    <!-- MAIN: conteúdo principal da página inicial -->
+    <main>
 
-    
+        <!-- BANNER PRINCIPAL -->
+        <section class="banner-principal text-white py-5">
+            <div class="container">
+                <div class="row align-items-center g-4">
 
-    <section class="bg-primary text-white py-5">
-        <div class="container">
-            <div class="row align-items-center g-4">
+                    <!-- Texto principal -->
+                    <div class="col-12 col-lg-5">
+                        <h2 class="display-5 fw-bold mb-3">
+                            O jogo começa <br>
+                            <span class="text-warning">na comunidade</span>
+                        </h2>
 
-                <div class="col-12 col-lg-5">
-                    <h2 class="display-5 fw-bold mb-3">
-                        O jogo começa <br>
-                        <span class="text-warnnig">na comunidade</span>
+                        <p class="lead mb-0">
+                            Esporte, integração e oportunidades para todos.
+                            Juntos, fazemos história dentro e fora das quadras!
+                        </p>
+                    </div>
+
+                    <!-- Imagem dos atletas -->
+                    <div class="col-12 col-lg-4">
+                        <img src="#" alt="Atletas da comunidade" class="img-fluid rounded-3">
+                    </div>
+
+                    <!-- Card da próxima rodada -->
+                    <div class="col-12 col-lg-3">
+                        <article class="bg-white text-dark p-4 rounded-3 shadow-sm">
+                            <h3 class="h4 fw-bold mb-3">
+                                Próxima rodada
+                            </h3>
+
+                            <p class="fw-semibold mb-3">
+                                Domingo • 26/05 • 10:00
+                            </p>
+
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-primary p-3">AZUL</span>
+                                <strong>X</strong>
+                                <span class="badge bg-success p-3">VERDE</span>
+                            </div>
+
+                            <p class="mb-3">
+                                Arena Comunitária do Bairro
+                            </p>
+
+                            <a href="#" class="btn btn-warning fw-bold w-100">
+                                Ver detalhes da partida
+                            </a>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!--MODALIDADES-->
+        <section class="bg-ligth py-5">
+            <div class="container">
+                <div class="d-flex flex-column flex-md-row justify-content-between aling align-items-md-end mb-4">
+                    <div>
+                        <h2 class="h4 fw-bold mb-0">
+                            Modalidades
+                        </h2>
+                    </div>
+                    <p class="text-secondary mb-0">
+                        Escolha uma modalidade para Acompanhar os jogos 
+                    </p>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-12 col-md-6 col-xl-4">
+                            <article class="bg-white border rounded-3 shadow-sm p-4 d-flex align-items-center gap-3">
+                                <span class="badge bg-primary p-3">F</span>
+                                <h3 class="h5 fw-bold mb-0">Futebol</h3>
+                            </article>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-4">
+                            <article class="bg-white border rounded-3 shadow-sm p-4 d-flex align-items-center gap-3">
+                                 <span class="badge bg-warning text-dark p-3">B</span>
+                                <h3 class="h5 fw-bold mb-0">Basquete</h3>
+                            </article>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-xl-4">
+                            <article class="bg-white border rounded-3 shadow-sm p-4 d-flex align-items-center gap-3">
+                                <span class="badge bg-success p-3">V</span>
+                                <h3 class="h5 fw-bold mb-0">Vôlei</h3>
+                            </article>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-xl-4">
+                            <article class="bg-white border rounded-3 shadow-sm p-4 d-flex align-items-center gap-3">
+                                <span class="badge bg-danger p-3">F</span>
+                                <h3 class="h5 fw-bold mb-0">Futsal</h3>
+                            </article>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-xl-4">
+                            <article class="bg-white border rounded-3 shadow-sm p-4 d-flex align-items-center gap-3">
+                                <span class="badge bg-info text-dark p-3">A</span>
+                                <h3 class="h5 fw-bold mb-0">Atletismo</h3>
+                            </article>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-xl-4">
+                            <article class="bg-white border rounded-3 shadow-sm p-4 d-flex align-items-center gap-3">
+                                <span class="badge bg-secondary p-3">T</span>
+                                <h3 class="h5 fw-bold mb-0">Tênis de Mesa</h3>
+                            </article>
+
+                        </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+       <!-- RESULTADOS, EQUIPES E INSCRIÇÃO -->
+<section class="bg-light pb-5">
+    <div class="container">
+        <div class="row g-4">
+
+            <!-- Últimos resultados -->
+            <div class="col-12 col-lg-5">
+                <article class="bg-white border rounded-3 shadow-sm p-4 h-100">
+                    <h2 class="h4 fw-bold mb-4">
+                        Últimos resultados
                     </h2>
 
-                    <p class="lead mb-0">
-                        Esporte, integração e oportunidades para todos.
-                        Juntos, fazemos história dentro e fora das quadras!
-                    </p>
-                </div>
-                <div class="col-12 col-lg-4">
-                    <img src="#" alt="Atletas" class="img-fluid rounded-3">
-                </div>
-                <div class="col-12 col-lg-3">
-                    <article class="bg-white text-dark  p-4 rounded-3 shadow-sm">
-                        <h3 class="h4 fw-bold mb-3">Proxima Rodada</h3>
-                        <p class="fw-semibold mb-3">Domingo • 26/05 • 10:00</p>
+                    <div class="border rounded-3 p-3 mb-2 d-flex justify-content-between align-items-center gap-2">
+                        <span>Equipe Azul</span>
+                        <strong>3 x 1</strong>
+                        <span>Equipe Branca</span>
+                    </div>
 
-                        <div class="d-flex justify-content-between"> 
-                            <p class="badge bg-primary text-white py-5">AZUL</p>
-                            <p>X</p>
-                            <p class="badge bg-success p-3">VERDE</p>
-                        </div>
-                        <p class="mb-3">Arena Comunitária do Bairro</p>
+                    <div class="border rounded-3 p-3 mb-2 d-flex justify-content-between align-items-center gap-2">
+                        <span>Equipe Laranja</span>
+                        <strong>58 x 47</strong>
+                        <span>Equipe Preta</span>
+                    </div>
 
-                        <a href="#" class=" btn btn-warning fw-bold w-100">
-                            Ver detalhes da partida
-                        </a>
-                    </article>
-                </div>
+                    <div class="border rounded-3 p-3 mb-2 d-flex justify-content-between align-items-center gap-2">
+                        <span>Equipe Verde</span>
+                        <strong>2 x 0</strong>
+                        <span>Equipe Amarela</span>
+                    </div>
+
+                    <div class="border rounded-3 p-3 mb-4 d-flex justify-content-between align-items-center gap-2">
+                        <span>Equipe Roxa</span>
+                        <strong>3 x 2</strong>
+                        <span>Equipe Cinza</span>
+                    </div>
+
+                    <a href="resultados.html" class="btn btn-outline-primary fw-semibold">
+                        Ver todos os resultados
+                    </a>
+                </article>
             </div>
+
+            <!-- Destaques das equipes -->
+            <div class="col-12 col-lg-7">
+                <article class="bg-white border rounded-3 shadow-sm p-4 h-100">
+                    <h2 class="h4 fw-bold mb-4">
+                        Destaques das equipes
+                    </h2>
+
+                    <div class="row g-3">
+
+                        <div class="col-12 col-md-6 col-xl-4">
+                            <div class="border rounded-3 p-4 h-100">
+                                <span class="badge bg-primary mb-2">Futebol</span>
+                                <h3 class="h5 fw-bold mb-2">Equipe Azul</h3>
+                                <p class="text-secondary mb-0">
+                                    22 atletas<br>
+                                    12 jogos<br>
+                                    8 vitórias
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-xl-4">
+                            <div class="border rounded-3 p-4 h-100">
+                                <span class="badge bg-success mb-2">Futsal</span>
+                                <h3 class="h5 fw-bold mb-2">Equipe Verde</h3>
+                                <p class="text-secondary mb-0">
+                                    18 atletas<br>
+                                    10 jogos<br>
+                                    7 vitórias
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-xl-4">
+                            <div class="border rounded-3 p-4 h-100">
+                                <span class="badge bg-warning text-dark mb-2">Basquete</span>
+                                <h3 class="h5 fw-bold mb-2">Equipe Laranja</h3>
+                                <p class="text-secondary mb-0">
+                                    16 atletas<br>
+                                    9 jogos<br>
+                                    6 vitórias
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <a href="#" class="btn btn-outline-primary fw-semibold mt-4">
+                        Ver todas as equipes
+                    </a>
+                </article>
+            </div>
+
+            <!-- Inscrição -->
+            <div class="col-12">
+                <aside class="inscricao text-white rounded-3 shadow-sm p-4 d-flex flex-column flex-md-row justify-content-between align-items-md-end gap-3">
+                    <div>
+                        <h2 class="display-6 fw-bold mb-2">
+                            Inscreva <span class="text-warning">sua equipe</span>
+                        </h2>
+
+                        <p class="lead mb-0">
+                            Participe do campeonato da sua comunidade e viva o melhor do esporte!
+                        </p>
+                    </div>
+
+                    <a href="inscricoes.html" class="btn btn-warning fw-bold">
+                        Quero inscrever minha equipe
+                    </a>
+                </aside>
+            </div>
+
         </div>
-    </section>
+    </div>
+</section>
+    </main>
 
-   
+    <footer class="rodape text-white py-5">
+    <div class="container">
+        <div class="row g-4">
 
-        <section>
-            <article>
-                <h3>Modalidades</h3>
-                <div>Futebol</div>
-                <div>Basquete</div>
-                <div>Vôlei</div>
-                <div>Futsal</div>
-                <div>Atletismo</div>
-                <div>Tênis de Mesa</div>
-            </article>
+            <!-- Marca -->
+            <div class="col-12 col-md-6 col-xl-4">
+                <div class="d-flex align-items-center gap-2 mb-3">
+                    <img src="#" alt="Logo Esporte em Rede" width="50">
 
-            <article>
-                <h3>Últimos resultados</h3>
-                <div>
-                    <p>Equipe Azul 3 x 1 Equipe Branca Futebol * 19/05</p>
+                    <h2 class="h4 fw-bold mb-0">
+                        Esporte em Rede
+                    </h2>
                 </div>
-                <div>
-                    <p>Equipe Laranja 58 x 47 Equipe Preta Basquete * 18/05</p>
-                </div>
-                <div>
-                    <p>Equipe Verde 2 x 0 Equipe Amarela Futsal * 18/05</p>
-                </div>
-                <div>
-                    Equipe Roxa 3 x 2 Equipe Cinza Vôlei * 17/05
-                </div>
-                <a href="#resultados">Ver todos os resultados ></a>
-            </article>
 
-            <article>
-                <h3>Destaques das equipes</h3>
-                <div>
-                    <h5>Equipe Azul</h5>
-                    <p>Futebol
-                       22 atletas
-                       12 jogos
-                       8 vitórias
-                    </p>
-                </div>
-                <div>
-                    <h5>Equipe Verde</h5>
-                    <p>Futsal
-                       18 atletas
-                       10 jogos
-                       7 vitórias
-                    </p>
-                </div>
-                <div>
-                    <h5>Equipe Laranja</h5>
-                    <p>Basquete
-                       16 atletas
-                       9 jogos
-                       6 vitórias
-                    </p>
-                </div>
-                <div>
-                    <h5>Equipe Roxa</h5>
-                    <p>Vôlei
-                       14 atletas
-                       8 jogos
-                       5 vitórias
-                    </p>
-                </div>
-                <a href="#">Ver todas as equipes ></a>
-            </article>
-        </section>
+                <p class="mb-0">
+                    O jogo começa na comunidade
+                </p>
+            </div>
+
+            <!-- Navegação -->
+            <div class="col-12 col-md-6 col-xl-4">
+                <h3 class="h5 fw-bold mb-3">
+                    Navegação
+                </h3>
+
+                <nav class="d-flex flex-wrap gap-3">
+                    <a class="text-white" href="index.html">Início</a>
+                    <a class="text-white" href="campeonatos.html">Campeonatos</a>
+                    <a class="text-white" href="inscricoes.html">Inscrições</a>
+                    <a class="text-white" href="#">Classificação</a>
+                    <a class="text-white" href="#">Notícias</a>
+                    <a class="text-white" href="#">Sobre</a>
+                </nav>
+            </div>
+
+            <!-- Contato -->
+            <div class="col-12 col-xl-4">
+                <h3 class="h5 fw-bold mb-3">
+                    Contato
+                </h3>
+
+                <p class="mb-2">
+                    contato@esporteemrede.com.br
+                </p>
+
+                <p class="mb-0">
+                    Comunidade onde o esporte acontece
+                </p>
+            </div>
+
+        </div>
+    </div>
+</footer>
 </body>
+</html>

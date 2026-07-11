@@ -1,40 +1,22 @@
-:root {
-    --azulescuro: #001333;
-    --azulescuro2: #002255;
-    --amarelo: #d4ff00;
-    --azul: #007bff;
-    --vermelho: #dc3545;
+.cabecalho {
+    background-color: #06183d;
 }
 
-body{
-    background-color: var(--azulescuro);
-    color: white;
+.banner-principal {
+    background-color: #0d6efd;
 }
 
-header{
-    background-color: var(--azulescuro2);
+.inscricao{
+    background-color: #0d6efd;
 }
 
-#cc{
-    margin: 10px;
+.rodape{
+    background-color: #06183d;
 }
 
-#destaque{
-    color: var(--amarelo);
+.rodape a{
+    text-decoration: none;
 }
-
-.btn{
-    background-color: var(--azulescuro2);
-    color: white;
-}
-
-
-img{
-    width: 40vw;
-    height: 50vh;
-}
-
-#futebol{
-    background-color: var(--amarelo);
-    color: black;
+.rodape a:hover {
+    color: #ffc107;
 }
