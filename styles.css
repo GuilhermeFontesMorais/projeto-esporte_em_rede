@@ -21,3 +21,8 @@
 .rodape a:hover{
     color: #ffc107;
 }
+
+#btnacompanhar{
+    padding-right: 0px;
+    padding-left: 0px;
+}
