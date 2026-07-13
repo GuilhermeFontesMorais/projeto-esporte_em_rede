@@ -26,3 +26,72 @@
     padding-right: 0px;
     padding-left: 0px;
 }
+
+#campcomun{
+    background-color: #0d6efd;
+}
+
+#classtab{
+    background-color: #0d6efd;
+    color: white;
+}
+
+#preto{
+    color: black;
+}
+
+#roxo{
+    color: purple;
+}
+
+#laranja{
+    color: orange;
+}
+
+#tabela{
+    background-color: #06183d;
+}
+
+#legenda{
+    background-color: #06183d;
+}
+
+#bglaranja{
+    background-color: orange;
+}
+
+#bgroxo{
+    background-color: purple;
+}
+
+#bgduelo{
+    background-color: #06183d;
+}
+
+#btroxo{
+    color: purple;
+    border: 1px solid purple;
+    border-radius: 5px;
+}
+
+#btlaranja{
+    color: orange;
+    border: 1px solid orange;
+    border-radius: 5px;
+}
+
+#btpreto{
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.equipe{
+    background-color: #06183d;
+    color: white;
+}
+
+.azulescuro{
+    background-color: #06183d;
+}
