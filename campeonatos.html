@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campeonato Comunitário — Esporte em Rede</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+</head>
+
+<body class="m-0 p-0">
+
+    <header class="container-fluid cabecalho text-white py-4">
+        <div>
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end gap-3">
+
+                <div class="d-flex align-items-center gap-1">
+                    <img src="imagens/logo_esporte_em_rede.png" alt="Logo Esporte em Rede" width="50px">
+
+                    <h1 class="h1 fw-bold mb-0">
+                        Esporte em Rede
+                    </h1>
+                </div>
+
+                <nav class="d-flex flex-wrap gap-3">
+                    <a class="text-white fw-semibold" href="index.html">Início</a>
+                    <a class="text-white fw-semibold" href="campeonatos.html">Campeonatos</a>
+                    <a class="text-white fw-semibold" href="resultados.html">Resultados</a>
+                    <a class="text-white fw-semibold" href="#">Classificação</a>
+                    <a class="text-white fw-semibold" href="#">Notícias</a>
+                    <a class="text-white fw-semibold" href="#">Sobre</a>
+                </nav>
+
+                <a class="btn btn-danger fw-semibold" id="btnacompanhar" href="campeonatos.html">
+                    Acompanhar campeonato
+                </a>
+
+            </div>
+        </div>
+    </header>
+
+    <main class="container-fluid p-0">
+        <section id="campcomun" class="container-fluid text-white">
+            <div class="">
+                <div class="d-flex align-items-center gap-2">
+                    <h2 class="fw-bold display-4">Campeonato Comunitário</h2>
+                    <img src="imagens/atletas.png" alt="Atletas comemorando" width="200px" height="150px">
+                </div>
+                <div>
+                    <p>O jogo começa na comunidade. A união faz o esporte mais forte!</p>
+                </div>
+
+                <div>
+                    <nav class="d-flex align-items-center gap-2">
+                        <a href="#" class="btn border border-dark text-white" id="futebol">
+                            <span class="material-symbols-outlined" style="font-size: 18px;">
+                                sports_soccer
+                            </span>
+                            Futebol</a>
+                        <a href="#" class="btn border border-dark text-white">
+                            <span class="material-symbols-outlined" style="font-size: 18px;">
+                                sports_basketball
+                            </span>
+                            Basquete</a>
+                        <a href="#" class="btn border border-dark text-white">
+                            <span class="material-symbols-outlined" style="font-size: 18px;">
+                                sports_volleyball
+                            </span>
+                            Vôlei</a>
+                        <a href="#" class="btn border border-dark text-white">
+                            <span class="material-symbols-outlined" style="font-size: 18px;">
+                                sports_and_outdoors
+                            </span>
+                            Futsal</a>
+                        <a href="#" class="btn border border-dark text-white">
+                            <span class="material-symbols-outlined" style="font-size: 18px;">
+                                sprint
+                            </span>
+                            Atletismo</a>
+                    </nav>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid px-2 md-4 py-3" id="classtab">
+            <h2 class="mb-3">Classificação</h2>
+            <table class="table-responsive table-bordered w-100 text-nowrap" id="tabela">
+                <thead>
+                    <tr>
+                        <th>Pos.</th>
+                        <th>Equipe</th>
+                        <th>J</th>
+                        <th>V</th>
+                        <th>E</th>
+                        <th>D</th>
+                        <th>GP</th>
+                        <th>GC</th>
+                        <th>SG</th>
+                        <th>Pts</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="bg-success">1</td>
+                        <td class="text-primary">Equipe Azul</td>
+                        <td>8</td>
+                        <td>6</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>18</td>
+                        <td>7</td>
+                        <td>+11</td>
+                        <td>19</td>
+                    </tr>
+                    <tr>
+                        <td class="bg-primary">2</td>
+                        <td class="text-success">Equipe Verde</td>
+                        <td>8</td>
+                        <td>5</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>16</td>
+                        <td>6</td>
+                        <td>+10</td>
+                        <td>17</td>
+                    </tr>
+                    <tr>
+                        <td class="bg-primary">3</td>
+                        <td id="laranja">Equipe Laranja</td>
+                        <td>8</td>
+                        <td>4</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>14</td>
+                        <td>9</td>
+                        <td>+5</td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td id="roxo">Equipe Roxa</td>
+                        <td>8</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>4</td>
+                        <td>11</td>
+                        <td>13</td>
+                        <td>-2</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Equipe Branca</td>
+                        <td>8</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>4</td>
+                        <td>8</td>
+                        <td>12</td>
+                        <td>-4</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td id="preto">Equipe Preta</td>
+                        <td>8</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>5</td>
+                        <td>7</td>
+                        <td>14</td>
+                        <td>-7</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td class="bg-danger">7</td>
+                        <td class="text-warning">Equipe Amarela</td>
+                        <td>8</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>15</td>
+                        <td>-9</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td class="bg-danger">8</td>
+                        <td class="text-secondary">Equipe Cinza</td>
+                        <td>8</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>7</td>
+                        <td>4</td>
+                        <td>18</td>
+                        <td>-14</td>
+                        <td>1</td>
+                    </tr>
+                </tbody>
+            </table>
+            <ul class="list-unstyled d-flex flex-wrap gap-3 mt-3 mb-0 pt-2" id="legenda">
+                <p>Legenda:</p>
+                <li><p class="text-success">Classificado</p></li>
+                <li><p class="text-primary">Playoff</p></li>
+                <li><p class="text-danger">Rebaixamento</p></li>
+            </ul>
+        </section>
+
+        <section class="container-fluid px-2 px-md-4 py-3 bg-primary">
+            <h2 class="mb-3 text-white">Próxima rodada</h2>
+            <ul class="list-unstyled mb-3">
+                <li class="text-white rounded shadow-sm mb-2 p-2 p-md-3" id="bgduelo">
+                    <div class="row align-items-center g-2 text-center">
+                        <div class="col-4 col-md-3 bg-primary pt-3 rounded-4">
+                            <p>Equipe Azul</p>
+                        </div>
+                        <div class="col-4 col-md-6">
+                            <p class="small fw-bold mb-1">25/05 • 10:00</p>
+                            <p class="fs-4 fw-bold mb-1">X</p>
+                            <p class="small mb-0">Arena Comunitária do Bairro</p>
+                        </div>
+                        <div class="col-4 col-md-3 bg-success pt-3 rounded-4">
+                            <p>Equipe Verde</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="text-white rounded shadow-sm mb-2 p-2 p-md-3" id="bgduelo">
+                    <div class="row align-items-center g-2 text-center">
+                        <div class="col-4 col-md-3 pt-3 rounded-4" id="bglaranja">
+                            <p>Equipe Laranja</p>
+                        </div>
+                        <div class="col-4 col-md-6">
+                            <p class="small fw-bold mb-1">25/05 • 10:00</p>
+                            <p class="fs-4 fw-bold mb-1">X</p>
+                            <p class="small mb-0">Quadra do Centro</p>
+                        </div>
+                        <div class="col-4 col-md-3 pt-3 rounded-4" id="bgroxo">
+                            <p>Equipe Roxa</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="text-white rounded shadow-sm mb-2 p-2 p-md-3" id="bgduelo">
+                    <div class="row align-items-center g-2 text-center">
+                        <div class="bg-white text-black col-4 col-md-3 pt-3 rounded-4">
+                            <p>Equipe Branca</p>
+                        </div>
+                        <div class="col-4 col-md-6">
+                            <p class="small fw-bold mb-1">25/05 • 10:00</p>
+                            <p class="fs-4 fw-bold mb-1">X</p>
+                            <p class="small mb-0">Campo do Parque</p>
+                        </div>
+                        <div class="col-4 col-md-3 bg-black text-white pt-3 rounded-4">
+                            <p>Equipe Preta</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="text-white rounded shadow-sm mb-2 p-2 p-md-3" id="bgduelo">
+                    <div class="row align-items-center g-2 text-center">
+                        <div class="col-4 col-md-3 bg-warning pt-3 rounded-4">
+                            <p>Equipe Amarela</p>
+                        </div>
+                        <div class="col-4 col-md-6">
+                            <p class="small fw-bold mb-1">25/05 • 10:00</p>
+                            <p class="fs-4 fw-bold mb-1">X</p>
+                            <p class="small mb-0">Arena Comunitária do Bairro</p>
+                        </div>
+                        <div class="col-4 col-md-3 bg-secondary pt-3 rounded-4">
+                            <p>Equipe Cinza</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <button class="btn btn-success w-100 py-2"><a href="#" class="fw-bold text-black">Ver todas as rodadas ></a></button>
+        </section>
+
+        <section class="container-fluid px-2 px-md-4 py-3 bg-primary">
+            <h2 class="mb-3 text-white">Equipes</h2>
+            <ul class="row list-unstyled g-2 g-md-3 mb-0">
+                <li class="col-6 col-md-4 col-lg-3">
+                    <div class="card h-100 text-center shadow-sm d-flex justify-content-center equipe">
+                            <div class="card-body d-flex flex-column">
+                                <p class="fw-bold mb-3">Equipe Azul</p>
+                                <a href="#" class="btn btn-outline-primary mt-auto">Ver equipe</a>
+                            </div>
+                    </div>
+                </li>
+                <li class="col-6 col-md-4 col-lg-3">
+                    <div class="card h-100 text-center shadow-sm d-flex justify-content-center equipe">
+                        <div class="card-body d-flex flex-column">
+                            <p class="fw-bold mb-3">Equipe Verde</p>
+                            <a href="#" class="btn btn-outline-success mt-auto">Ver equipe</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="col-6 col-md-4 col-lg-3">
+                    <div class="card h-100 text-center shadow-sm d-flex justify-content-center equipe">
+                        <div class="card-body d-flex flex-column">
+                            <p class="fw-bold mb-3">Equipe Laranja</p>
+                            <a href="#" class="btn mt-auto" id="btlaranja">Ver equipe</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="col-6 col-md-4 col-lg-3">
+                    <div class="card h-100 text-center shadow-sm d-flex justify-content-center equipe">
+                        <div class="card-body d-flex flex-column">
+                            <p class="fw-bold mb-3">Equipe Roxa</p>
+                            <a href="#" class="btn mt-auto" id="btroxo">Ver equipe</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="col-6 col-md-4 col-lg-3">
+                    <div class="card h-100 text-center shadow-sm d-flex justify-content-center equipe">
+                        <div class="card-body d-flex flex-column">
+                            <p class="fw-bold mb-3">Equipe Branca</p>
+                            <a href="#" class="btn btn-outline-light mt-auto">Ver equipe</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="col-6 col-md-4 col-lg-3">
+                    <div class="card h-100 text-center shadow-sm d-flex justify-content-center equipe">
+                        <div class="card-body d-flex flex-column">
+                            <p class="fw-bold mb-3">Equipe Preta</p>
+                            <a href="#" class="btn mt-auto" id="btpreto">Ver equipe</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="col-6 col-md-4 col-lg-3">
+                    <div class="card h-100 text-center shadow-sm d-flex justify-content-center equipe">
+                        <div class="card-body d-flex flex-column">
+                            <p class="fw-bold mb-3">Equipe Amarela</p>
+                            <a href="#" class="btn btn-outline-warning mt-auto">Ver equipe</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="col-6 col-md-4 col-lg-3">
+                    <div class="card h-100 text-center shadow-sm d-flex justify-content-center equipe">
+                        <div class="card-body d-flex flex-column">
+                            <p class="fw-bold mb-3">Equipe Cinza</p>
+                            <a href="#" class="btn btn-outline-secondary mt-auto">Ver equipe</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <aside class="container-fluid px-2 px-md-4 py-3 bg-primary">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h2 class="mb-0 text-white">Notícias</h2>
+                <a href="#" class="link-dark fw-bold">Ver todas</a>
+            </div>
+            <ul class="list-unstyled mb-0">
+                <li class="border rounded p-2 mb-2 azulescuro text-white">
+                    <h4 class="fs-6 fw-bold mb-1">Equipe Azul vence clássico e assume a liderança</h4>
+                    <p class="small mb-1">Partida disputada até o último minuto agitou a torcida.</p>
+                    <span>22/05/2025</span>
+                </li>
+                <li class="border rounded p-2 mb-2 azulescuro text-white">
+                    <h4 class="fs-6 fw-bold mb-1">Inscrições abertas para novos atletas</h4>
+                    <p class="small mb-1">Participe do campeonato e represente sua comunidade.</p>
+                    <span>20/05/2025</span>
+                </li>
+                <li class="border rounded p-2 mb-2 azulescuro text-white">
+                    <h4 class="fs-6 fw-bold mb-1">Futsal: rodada cheia de gols e emoções</h4>
+                    <p class="small mb-1">Confira os melhores momentos da última rodada.</p>
+                    <span >18/05/2025</span>
+                </li>
+            </ul>
+        </aside>
+
+    </main>
+
+    <footer class="rodape text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- Marca -->
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <img src="imagens/logo_esporte_em_rede.png" alt="Logo Esporte em Rede" width="50">
+
+                        <h2 class="h4 fw-bold mb-0">
+                            Esporte em Rede
+                        </h2>
+                    </div>
+
+                    <p class="mb-0">
+                        O jogo começa na comunidade
+                    </p>
+                </div>
+
+                <!-- Navegação -->
+                <div class="col-12 col-md-6 col-xl-4">
+                    <h3 class="h5 fw-bold mb-3">
+                        Navegação
+                    </h3>
+
+                    <nav class="d-flex flex-wrap gap-3">
+                        <a class="text-white" href="index.html">Início</a>
+                        <a class="text-white" href="campeonatos.html">Campeonatos</a>
+                        <a class="text-white" href="inscricoes.html">Inscrições</a>
+                        <a class="text-white" href="#">Classificação</a>
+                        <a class="text-white" href="#">Notícias</a>
+                        <a class="text-white" href="#">Sobre</a>
+                    </nav>
+                </div>
+
+                <!-- Contato -->
+                <div class="col-12 col-xl-4">
+                    <h3 class="h5 fw-bold mb-3">
+                        Contato
+                    </h3>
+
+                    <p class="mb-2">
+                        contato@esporteemrede.com.br
+                    </p>
+
+                    <p class="mb-0">
+                        Comunidade onde o esporte acontece
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
