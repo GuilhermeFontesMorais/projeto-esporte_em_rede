@@ -2,29 +2,61 @@
     background-color: #06183d;
 }
 
-#cc{
-    margin: 10px;
+.banner-principal {
+    background-color: #011b4e;
+    background-position: center;
+    background-size: cover;
 }
 
-#destaque{
-    color: var(--amarelo);
+.inscricao{
+    background-color: #0d6efd;
 }
 
-/*.btn{
-    background-color: var(--azulescuro2);
-    color: white;
-}*/
-
-
-img{
-    width: 40vw;
-    height: 50vh;
+.rodape{
+    background-color: #06183d;
 }
 
-#futebol{
-    background-color: var(--amarelo);
-    color: black;
+.rodape a{
+    text-decoration: none;
 }
 .rodape a:hover {
     color: #ffc107;
+}
+.card-inscricao {
+    background: linear-gradient(135deg, #0d6efd, #0096d8);
+}
+
+.card-inscricao p {
+    color: white;
+}
+.menu-topo a{
+    transition: color 0.2s ease-in-out;
+}
+.menu-topo a:hover{
+    color:#ffc107 !important;
+}
+.ponto-cor {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+/* EFEITO DE MOVIMENTO NOS CARDS DE MODALIDADE */
+.card-modalidade {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+/* Quando o usuário passa o cursor do mouse */
+.card-modalidade:hover {
+    transform: translateY(-8px); /* Move o card 8 pixels para cima */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15) !important; /* Deixa a sombra mais forte ao subir */
+}
+.card-elenco{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.card-elenco:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15) !important;
 }
